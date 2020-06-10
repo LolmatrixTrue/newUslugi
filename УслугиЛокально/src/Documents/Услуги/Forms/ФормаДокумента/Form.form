@@ -1124,36 +1124,6 @@
             <currentRowUse>DontUse</currentRowUse>
           </extInfo>
         </items>
-        <items xsi:type="form:Button">
-          <name>ВыбратьФайлКартинкиГаз</name>
-          <id>141</id>
-          <enabled>true</enabled>
-          <userVisible>
-            <common>true</common>
-          </userVisible>
-          <extendedTooltip>
-            <name>ВыбратьФайлКартинкиГазРасширеннаяПодсказка</name>
-            <id>142</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
-            <type>Label</type>
-            <autoMaxWidth>true</autoMaxWidth>
-            <autoMaxHeight>true</autoMaxHeight>
-            <extInfo xsi:type="form:LabelDecorationExtInfo">
-              <horizontalAlign>Left</horizontalAlign>
-            </extInfo>
-          </extendedTooltip>
-          <type>UsualButton</type>
-          <commandName>Form.Command.ВыбратьФайлКартинкиГаз</commandName>
-          <representation>Auto</representation>
-          <autoMaxWidth>true</autoMaxWidth>
-          <autoMaxHeight>true</autoMaxHeight>
-          <placementArea>UserCmds</placementArea>
-          <representationInContextMenu>Auto</representationInContextMenu>
-        </items>
         <items xsi:type="form:FormField">
           <name>РазницаГаз</name>
           <id>58</id>
@@ -1170,7 +1140,7 @@
           <titleLocation>Left</titleLocation>
           <handlers>
             <event>OnChange</event>
-            <name>РазницаГазПриИзменении</name>
+            <name>СтГазПриИзменении</name>
           </handlers>
           <extendedTooltip>
             <name>РазницаГазРасширеннаяПодсказка</name>
@@ -1536,36 +1506,6 @@
             <throughAlign>Auto</throughAlign>
             <currentRowUse>DontUse</currentRowUse>
           </extInfo>
-        </items>
-        <items xsi:type="form:Button">
-          <name>ВыбратьФайлКартинки</name>
-          <id>133</id>
-          <enabled>true</enabled>
-          <userVisible>
-            <common>true</common>
-          </userVisible>
-          <extendedTooltip>
-            <name>ВыбратьФайлКартинкиРасширеннаяПодсказка</name>
-            <id>134</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
-            <type>Label</type>
-            <autoMaxWidth>true</autoMaxWidth>
-            <autoMaxHeight>true</autoMaxHeight>
-            <extInfo xsi:type="form:LabelDecorationExtInfo">
-              <horizontalAlign>Left</horizontalAlign>
-            </extInfo>
-          </extendedTooltip>
-          <type>Hyperlink</type>
-          <commandName>Form.Command.ВыбратьФайлКартинки</commandName>
-          <representation>Auto</representation>
-          <autoMaxWidth>true</autoMaxWidth>
-          <autoMaxHeight>true</autoMaxHeight>
-          <placementArea>UserCmds</placementArea>
-          <representationInContextMenu>Auto</representationInContextMenu>
         </items>
         <items xsi:type="form:FormField">
           <name>РазницаСвет</name>
@@ -2678,10 +2618,6 @@
                 <segments>Объект.ОплаченоГаз</segments>
               </paths>
             </dataPath>
-            <handlers>
-              <event>OnChange</event>
-              <name>ОплаченоГазПриИзменении</name>
-            </handlers>
             <extendedTooltip>
               <name>ОплаченоГазРасширеннаяПодсказка</name>
               <id>67</id>
@@ -3277,24 +3213,12 @@
     <horizontalAlign>Left</horizontalAlign>
   </autoCommandBar>
   <handlers>
-    <event>NewWriteProcessing</event>
-    <name>ОбработкаЗаписиНового</name>
-  </handlers>
-  <handlers>
     <event>OnOpen</event>
     <name>ПриОткрытии</name>
   </handlers>
   <handlers>
-    <event>ExternalEvent</event>
-    <name>ВнешнееСобытие</name>
-  </handlers>
-  <handlers>
     <event>OnCreateAtServer</event>
     <name>ПриСозданииНаСервере</name>
-  </handlers>
-  <handlers>
-    <event>FillCheckProcessingAtServer</event>
-    <name>ОбработкаПроверкиЗаполненияНаСервере</name>
   </handlers>
   <autoTitle>true</autoTitle>
   <autoUrl>true</autoUrl>
@@ -3561,48 +3485,6 @@
     <currentRowUse>Auto</currentRowUse>
   </formCommands>
   <formCommands>
-    <name>ВыбратьФайлКартинки</name>
-    <title>
-      <key>ru</key>
-      <value>Выбрать файл картинки</value>
-    </title>
-    <id>6</id>
-    <toolTip>
-      <key>ru</key>
-      <value>Выбрать файл картинки</value>
-    </toolTip>
-    <use>
-      <common>true</common>
-    </use>
-    <action xsi:type="form:FormCommandHandlerContainer">
-      <handler>
-        <name>ВыбратьФайлКартинки</name>
-      </handler>
-    </action>
-    <currentRowUse>Auto</currentRowUse>
-  </formCommands>
-  <formCommands>
-    <name>ВыбратьФайлКартинкиГаз</name>
-    <title>
-      <key>ru</key>
-      <value>Выбрать файл картинки газ</value>
-    </title>
-    <id>7</id>
-    <toolTip>
-      <key>ru</key>
-      <value>Выбрать файл картинки газ</value>
-    </toolTip>
-    <use>
-      <common>true</common>
-    </use>
-    <action xsi:type="form:FormCommandHandlerContainer">
-      <handler>
-        <name>ВыбратьФайлКартинкиГаз</name>
-      </handler>
-    </action>
-    <currentRowUse>Auto</currentRowUse>
-  </formCommands>
-  <formCommands>
     <name>СчитатьИтог</name>
     <title>
       <key>ru</key>
@@ -3635,10 +3517,6 @@
     <commandBar/>
   </commandInterface>
   <extInfo xsi:type="form:DocumentFormExtInfo">
-    <handlers>
-      <event>BeforeWrite</event>
-      <name>ПередЗаписью</name>
-    </handlers>
     <handlers>
       <event>BeforeWriteAtServer</event>
       <name>ПередЗаписьюНаСервере</name>
