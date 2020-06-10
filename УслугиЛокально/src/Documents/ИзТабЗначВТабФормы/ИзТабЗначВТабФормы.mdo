@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="dc96090a-350c-4953-9271-d163c1a1ee72">
+  <producedTypes>
+    <objectType typeId="f6dd2453-17c2-4f03-abf8-5bab0f77f97a" valueTypeId="2522b655-b7b2-42b8-996c-bdf70b9f8972"/>
+    <refType typeId="29312a77-b6e2-4675-8d51-dd442f2f7797" valueTypeId="9de0cd0c-1d3c-48ab-821e-780d897139bc"/>
+    <selectionType typeId="d2e834eb-443f-407c-aade-676763b12a7d" valueTypeId="f6b5af9d-aa21-4238-aa02-53233c6068b9"/>
+    <listType typeId="082dffd2-f133-4483-b7ee-aaa441dff082" valueTypeId="59517c54-10e9-4431-9e6f-67e05b3bd962"/>
+    <managerType typeId="9f56192e-5641-472c-8e63-1b668fcdeed9" valueTypeId="fec2d959-b9d1-4423-8021-c8c14966710f"/>
+  </producedTypes>
+  <name>ИзТабЗначВТабФормы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Из таб знач в таб формы</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ИзТабЗначВТабФормы.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ИзТабЗначВТабФормы.Form.ФормаДокумента</defaultObjectForm>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <forms uuid="0ddb01d8-040f-4007-8c08-00f737114b08">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="4f1b5187-35ea-4363-8b67-5857ff2c8f2a">
+    <producedTypes>
+      <objectType typeId="0143b90e-ed00-4b2a-b090-1672c9cfa669" valueTypeId="ed1f1a0e-adac-4932-8ad4-1095f82b7503"/>
+      <rowType typeId="452eaaa4-4106-4d7e-81dc-cb225187cf7f" valueTypeId="ce66b2bf-d20e-402f-a26a-79ba97cf104c"/>
+    </producedTypes>
+    <name>ТаблицаМесяцы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Таблица месяцы</value>
+    </synonym>
+    <attributes uuid="25428a69-a440-466a-99ef-dd17c2ddbce3">
+      <name>Месяц</name>
+      <synonym>
+        <key>ru</key>
+        <value>Месяц</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>10</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>
